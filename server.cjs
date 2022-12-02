@@ -14,7 +14,7 @@ const mkdirp = require("mkdirp");
 const rimraf = require("rimraf");
 const yargs = require("yargs").options({
   port: {
-    default: 8080,
+    default: 8081,
     description: "Port to listen on.",
   },
   public: {

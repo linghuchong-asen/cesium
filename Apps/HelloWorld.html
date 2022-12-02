@@ -13,7 +13,7 @@
     <title>Hello World!</title>
     <script src="../Build/CesiumUnminified/Cesium.js"></script>
     <style>
-      @import url(../Build/CesiumUnminified//Widgets/widgets.css);
+      @import url("../Build/CesiumUnminified//Widgets/widgets.css");
       html,
       body,
       #cesiumContainer {
@@ -28,6 +28,9 @@
   <body>
     <div id="cesiumContainer"></div>
     <script>
+      // 添加cesium ion token，然后就可以使用cesium ion提供的影像数据,否则没有地球的影像数据
+      Cesium.Ion.defaultAccessToken =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMTg5OGUwNi05MTEzLTQ0MWMtODMyOC1hYWQ0MmQ4NmQ2ZjgiLCJpZCI6MTA1ODA0LCJpYXQiOjE2Njk3OTk4MTh9.ivfK2hZ04NnfnHQhhKX9vFv-xWlGuCUBAwe_S-Gf-ro";
       const viewer = new Cesium.Viewer("cesiumContainer");
     </script>
   </body>
